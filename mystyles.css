@@ -1,79 +1,142 @@
-:root {
-  --primary1: #993F3B;
-  --primary2: #520A06;
-  --secondary11: #3A6E73;
-  --secondary12: #13464B;
-  --secondary21: #90AF58;
-  --secondary22: #6F8E36;
-  --textLight: white;
-  --textDark: black;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  max-width: 80%;
-}
-
-.sr-only {
-  position: absolute;
-  top: auto;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 60px 1fr 60px;
-  grid-template-areas:
-  "header header"
-  "aside main"
-  "footer footer";
-}
-
-header{
-  grid-area: header;
-}
-
-nav{
-  height: 100%;
-}
-
-.main-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height:100%;
-  background: orange;
-  list-style-type: none;
-
-}
-
-.main-nav a {
+.main-nav a {nav a {
+  color: white;
+  font-size: 160%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   text-decoration: none;
-  color: var(--textLight);
-  font-size: 2em;
-  text-transform: capitalize;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+body {
+    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjcpKOX9L3lAhV9HDQIHcMGDuYQjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fen%2Fphoto%2F1592957&psig=AOvVaw3-iDdN3z7wA3WN8Qvww9jY&ust=1572316129177937");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-left: 17%;
+    padding-right: 5%;
+    padding-top: 20px;
+    
+}
+nav {
+  background-color: #999999;
+  border-radius: 30px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #125;
+}
+p {
+  font-family: "Lucida Console"
+}
+ul a {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+footer p {
+	background-color: #999999;
+  border-radius: 25px;
+	display: inline-block;
+}
+footer p a:hover {
+	background-color: #125;
+	border-radius: 30px;
+}
+footer p a {
+	color: white;
+  font-size: 90%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 4px;
 }
 
-main{
-  grid-area: main;
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@media only screen and (min-width: 599px) {
+ .typewriter p {					
+  font-family: Lucida Console;               
+  overflow: hidden; 
+  border-right: .15em black;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+  	typing 3.5s steps(30, end),
+ 	blinking-cursor .5s step-end infinite;
+}
+}	
+@media only screen and (max-width: 600px) {
+  
+  nav a {
+   display: block; 
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;	  
+  }
+  p a {
+   display: block;
+  }
+  body a {
+   display: block;
+  }
+  footer a {
+	display: block;  
+  }
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #125;
+   color: white;
+   text-align: center;
+  }
+@media only screen and (min-width: 599px) {
+ .typewriter p {					
+  font-family: Lucida Console;               
+  overflow: hidden; 
+  border-right: .15em black;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+  	typing 3.5s steps(30, end),
+ 	blinking-cursor .5s step-end infinite;
+}
+}	
+@media only screen and (max-width: 600px) {
+  
+  nav a {
+   display: block; 
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 25px;
+  }
+  p a {
+   display: block;
+  }
+  body a {
+   display: block;
+  }
+  footer a {
+	display: block;  
+  }
+  	
+}
+aside {
+	
+}
+footer {
+	color:#125
 }
 
-aside{
-  grid-area: aside;
-}
 
-footer{
-  grid-area: footer;
-}
+
+
+
 
 
 
