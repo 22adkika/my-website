@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rabbits</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rabbits and how to maintain them">
+    <meta name="keywords" content="Rabbits">
+    <meta name="author" content="Katherine Adkins">
+    <link rel="stylesheet" href="mystyles.css" type="text/css">
+</head>
+<body>
+	<header id="toptitle">
+        <h2>Rabbits</h2>
+    </header>
+	
+    <section>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Maintain.html">Rabbits and how to maintain them</a></li>
+                <li><a href="Lion.html">Lion Head Rabbits</a></li>
+                <li><a href="Jersey.html">jersey wooly rabbits</a></li>
+                <li><a href="Holland.html">holland lop rabbits</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Rabbits and how to maintain them</h2>
+            <p>
+                Rabbits are fairly common pets for lots of people but here are a handful of things to know first. If you didn&#39;t know there are lots and lots of different breeds of rabbit that vary in size. They&#39;re very smart and some breeds you can even litterbox train. I myself can claim to this because i&#39;ve litterbot trained many bunnies. It saves certain hastles with cleaning out the cage but can take effort from the pet owner. I really just love all my animals to the fullest and take full force when i bring a new pet into my home. I&#39;ve had a total of six rabbits that I&#39;ve owned and taken care of as pets. I&#39;ve also been in contact with many different breeders who had different selections of breed. I found that smaller breeds were more skittish at first but if you handle them enough they grow fond of you and create a bond. Once your pet trusts you owning your rabbit is great.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <h2><a href="#toptitle">Back to Top</a></h2>
+    </footer>
+</body>
+</html>
+
+    
+    
+    
+    
