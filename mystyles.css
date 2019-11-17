@@ -1,150 +1,67 @@
-.main-nav a {nav a {
-  color: white;
-  font-size: 160%;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  text-decoration: none;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 30px;
+* {
+    box-sizing: border-box;
 }
+
 body {
-    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjcpKOX9L3lAhV9HDQIHcMGDuYQjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fen%2Fphoto%2F1592957&psig=AOvVaw3-iDdN3z7wA3WN8Qvww9jY&ust=1572316129177937");
-    background-repeat: no-repeat;
-    background-size:cover;
-    padding-left: 17%;
-    padding-right: 5%;
-    padding-top: 20px;
-    
+    font-family: Verdana, Helvetica, sans-serif;
 }
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
 nav {
-  background-color: #999999;
-  border-radius: 30px;
-  display: inline-block;
-}
-nav a:hover {
-  background-color: #125;
-}
-p {
-  font-family: "Lucida Console"
-}
-ul a {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-footer p {
-	background-color: #999999;
-  border-radius: 25px;
-	display: inline-block;
-}
-footer p a:hover {
-	background-color: #125;
-	border-radius: 30px;
-}
-footer p a {
-	color: white;
-  font-size: 90%;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  text-decoration: none;
-  padding-left: 2px;
-  padding-right: 2px;
-  border-radius: 4px;
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
 }
 
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+nav ul li {
+    margin-top: 5px;
+    font-family: Verdana;
 }
-@media only screen and (min-width: 599px) {
- .typewriter p {					
-  font-family: Lucida Console;               
-  overflow: hidden; 
-  border-right: .15em black;
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-  	typing 3.5s steps(30, end),
- 	blinking-cursor .5s step-end infinite;
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
 }
-}	
-@media only screen and (max-width: 600px) {
-  
-  nav a {
-   display: block; 
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 30px;	  
-  }
-  p a {
-   display: block;
-  }
-  body a {
-   display: block;
-  }
-  footer a {
-	display: block;  
-  }
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #125;
-   color: white;
-   text-align: center;
-  }
-@media only screen and (min-width: 599px) {
- .typewriter p {					
-  font-family: Lucida Console;               
-  overflow: hidden; 
-  border-right: .15em black;
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-  	typing 3.5s steps(30, end),
- 	blinking-cursor .5s step-end infinite;
-}
-}	
-@media only screen and (max-width: 600px) {
-  
-  nav a {
-   display: block; 
-  padding-left: 2px;
-  padding-right: 2px;
-  border-radius: 25px;
-  }
-  p a {
-   display: block;
-  }
-  body a {
-   display: block;
-  }
-  footer a {
-	display: block;  
-  }
-  	
-}
-aside {
-	
-}
+
+/* Style the footer */
 footer {
-	color:#125
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="mystyles.css" type="text/css">
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
