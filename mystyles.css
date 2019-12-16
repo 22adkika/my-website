@@ -48,9 +48,7 @@ nav a.active {
   background-color: #964B00;
   color: white;
 }
-nav.b {
-  visibility: hidden;
-}
+
 body{
   background-color: #964B00;
 }
